@@ -1,0 +1,26 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    overflow: hidden;
+    position: relative;
+}
+
+.road1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+    min-width: 100vw;
+}
