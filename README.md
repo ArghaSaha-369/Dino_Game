@@ -1,2 +1,2 @@
-# Running_Monkey_Game
-A game featuring a monkey jumping over obstacles
+# Dino_Game
+A game featuring a dino jumping over obstacles
