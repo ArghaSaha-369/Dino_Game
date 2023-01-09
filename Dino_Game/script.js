@@ -1,3 +1,5 @@
+import { updateGround } from "./ground.js"
+
 const Container_Width = 100;
 const Container_Height = 30;
 const containerElem = document.querySelector('[data-container]');
@@ -12,8 +14,8 @@ function update(time){
     window.requestAnimationFrame(update)
     return
     }
-    const delta = lastTime - time
-    console.log(delta)
+    const delta = time - lastTime
+    updateGround(delta)
     lastTime = time
     window.requestAnimationFrame(update)
 }
