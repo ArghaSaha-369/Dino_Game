@@ -8,7 +8,7 @@ setPixelToWorldScale();
 window.addEventListener("resize", setPixelToWorldScale);
 
 let lastTime
-function update(time){
+function update(time) {
     if(lastTime == null){
     lastTime = time
     window.requestAnimationFrame(update)
@@ -22,7 +22,7 @@ function update(time){
 window.requestAnimationFrame(update)
 
 function setPixelToWorldScale() {
-    let worldToPixel;
+    let worldToPixel
     if(window.innerWidth / window.innerHeight < Container_Width / Container_Height){
         worldToPixel = window.innerWidth / Container_Width
     }
