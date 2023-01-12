@@ -9,9 +9,9 @@ export function setupGround() {
 
 }
 
-export function updateGround(delta, scale) {
+export function updateGround(delta) {
     groundElems.forEach(ground => {
-        incrementCustomProperty(ground, "--left", delta * scale * speed * -1)
+        incrementCustomProperty(ground, "--left", delta * speed * -1)
         if(getCustomProperty(ground, "--left") <= -300) {
             incrementCustomProperty(ground, "--left", 600)
         }

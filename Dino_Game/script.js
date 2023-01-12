@@ -1,11 +1,13 @@
-import { updateGround } from "./ground.js"
+import { setupGround, updateGround } from "./ground.js"
 
 const Container_Width = 100;
 const Container_Height = 30;
-const containerElem = document.querySelector('[data-container]');
+const containerElem = document.querySelector("[data-container]");
 
 setPixelToWorldScale();
 window.addEventListener("resize", setPixelToWorldScale);
+
+setupGround()
 
 let lastTime
 function update(time) {
@@ -30,6 +32,6 @@ function setPixelToWorldScale() {
         worldToPixel = window.innerHeight / Container_Height
     }
 }
-
+let worldToPixel
 containerElem.style.width = `${Container_Width * worldToPixel}px`
 containerElem.style.height = `${Container_Height * worldToPixel}px`
